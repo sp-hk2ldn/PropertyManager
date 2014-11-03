@@ -1,6 +1,14 @@
 Rails.application.routes.draw do
 
 
+  resources :contractors
+
+  resources :works
+
+  resources :tenants
+
+  resources :landlords
+
   resources :properties
 
   # The priority is based upon order of creation: first created -> highest priority.

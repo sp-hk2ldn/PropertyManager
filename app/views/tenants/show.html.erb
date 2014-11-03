@@ -1,0 +1,35 @@
+<div class="page-header">
+  <%= link_to tenants_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_tenant_path(@tenant), :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show tenant</h1>
+</div>
+
+<dl class="dl-horizontal">
+  <dt>First name:</dt>
+  <dd><%= @tenant.first_name %></dd>
+
+  <dt>Last name:</dt>
+  <dd><%= @tenant.last_name %></dd>
+
+  <dt>Email:</dt>
+  <dd><%= @tenant.email %></dd>
+
+  <dt>Tel:</dt>
+  <dd><%= @tenant.tel %></dd>
+
+  <dt>Lease commenced:</dt>
+  <dd><%= @tenant.lease_commenced %></dd>
+
+  <dt>Lease end:</dt>
+  <dd><%= @tenant.lease_end %></dd>
+
+  <dt>Property:</dt>
+  <dd><%= @tenant.property_id %></dd>
+
+</dl>

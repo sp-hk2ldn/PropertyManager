@@ -361,3 +361,188 @@ Processing by PropertiesController#new as HTML
   Rendered properties/_form.html.erb (27.8ms)
   Rendered properties/new.html.erb within layouts/application (33.8ms)
 Completed 200 OK in 227ms (Views: 216.9ms | ActiveRecord: 0.6ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateLandlords (20141103120300)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "landlords" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255), "tel" varchar(255), "address" varchar(255), "date_registered" date, "property_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141103120300"]]
+  [1m[36m (38.7ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-03 20:03:28 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 492ms (Views: 478.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:29 +0800
+
+
+Started GET "/landlords" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+Processing by LandlordsController#index as HTML
+  [1m[35mLandlord Load (0.2ms)[0m  SELECT "landlords".* FROM "landlords"
+  Rendered landlords/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 256ms (Views: 253.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-03 20:03:42 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTenants (20141103120426)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.4ms)[0m  [1mCREATE TABLE "tenants" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "first_name" varchar(255), "last_name" varchar(255), "email" varchar(255), "tel" varchar(255), "lease_commenced" date, "lease_end" date, "property_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141103120426"]]
+  [1m[36m (36.2ms)[0m  [1mcommit transaction[0m
+Migrating to CreateWorks (20141103120545)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.7ms)[0m  [1mCREATE TABLE "works" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type" varchar(255), "raised_date" date, "due_date" date, "property_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141103120545"]]
+  [1m[36m (37.7ms)[0m  [1mcommit transaction[0m
+Migrating to CreateContractors (20141103120739)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mCREATE TABLE "contractors" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "company_name" varchar(255), "industry_type" varchar(255), "email" varchar(255), "tel" varchar(255), "jobs_completed" integer, "jobs_feedback_good" integer, "jobs_feedback_bad" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141103120739"]]
+  [1m[36m (42.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
