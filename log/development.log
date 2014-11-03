@@ -546,3 +546,2327 @@ Migrating to CreateContractors (20141103120739)
   [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20141103120739"]]
   [1m[36m (42.2ms)[0m  [1mcommit transaction[0m
   [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+
+
+Started GET "/properties" for 127.0.0.1 at 2014-11-03 20:22:10 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PropertiesController#index as HTML
+  [1m[35mProperty Load (0.2ms)[0m  SELECT "properties".* FROM "properties"
+  Rendered properties/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 812ms (Views: 795.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/properties" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+Processing by PropertiesController#index as HTML
+  [1m[36mProperty Load (0.2ms)[0m  [1mSELECT "properties".* FROM "properties"[0m
+  Rendered properties/index.html.erb within layouts/application (4.0ms)
+Completed 200 OK in 260ms (Views: 258.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-03 20:22:12 +0800
+
+
+Started GET "/properties/new" for 127.0.0.1 at 2014-11-03 20:23:15 +0800
+Processing by PropertiesController#new as HTML
+  Rendered properties/_form.html.erb (25.9ms)
+  Rendered properties/new.html.erb within layouts/application (30.8ms)
+Completed 200 OK in 262ms (Views: 254.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/properties" for 127.0.0.1 at 2014-11-03 20:23:37 +0800
+Processing by PropertiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cHW2hvKXhlNaavsPY4WAWrp+3lOgT1hjg9yxTgcvFkw=", "property"=>{"address"=>"45 The Drive, Wallington, Surrey, SM69ND", "landlord_id"=>"1", "longitude"=>"", "latitude"=>"", "works"=>"1", "work_type"=>"Plumbing"}, "commit"=>"Create Property"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "properties" ("address", "created_at", "landlord_id", "updated_at", "work_type", "works") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", "45 The Drive, Wallington, Surrey, SM69ND"], ["created_at", "2014-11-03 12:23:37.511623"], ["landlord_id", 1], ["updated_at", "2014-11-03 12:23:37.511623"], ["work_type", "Plumbing"], ["works", "t"]]
+  [1m[35m (36.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/properties/1
+Completed 302 Found in 54ms (ActiveRecord: 37.5ms)
+
+
+Started GET "/properties/1" for 127.0.0.1 at 2014-11-03 20:23:37 +0800
+Processing by PropertiesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mProperty Load (0.2ms)[0m  [1mSELECT  "properties".* FROM "properties"  WHERE "properties"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered properties/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 180ms (Views: 174.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-03 20:23:38 +0800
+
+
+Started GET "/properties" for 127.0.0.1 at 2014-11-03 20:23:40 +0800
+Processing by PropertiesController#index as HTML
+  [1m[35mProperty Load (0.3ms)[0m  SELECT "properties".* FROM "properties"
+  Rendered properties/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 196ms (Views: 194.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/landlords" for 127.0.0.1 at 2014-11-03 20:23:48 +0800
+Processing by LandlordsController#index as HTML
+  [1m[36mLandlord Load (0.2ms)[0m  [1mSELECT "landlords".* FROM "landlords"[0m
+  Rendered landlords/index.html.erb within layouts/application (4.7ms)
+Completed 200 OK in 201ms (Views: 194.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-03 20:23:49 +0800
+
+
+Started GET "/landlords/new" for 127.0.0.1 at 2014-11-03 20:23:51 +0800
+Processing by LandlordsController#new as HTML
+  Rendered landlords/_form.html.erb (15.5ms)
+  Rendered landlords/new.html.erb within layouts/application (17.4ms)
+Completed 200 OK in 227ms (Views: 219.7ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/landlords" for 127.0.0.1 at 2014-11-03 20:24:22 +0800
+Processing by LandlordsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cHW2hvKXhlNaavsPY4WAWrp+3lOgT1hjg9yxTgcvFkw=", "landlord"=>{"first_name"=>"Stephen", "last_name"=>"Parker", "email"=>"stevo_parker@hotmail.com", "tel"=>"07789985798", "address"=>"Jordan, Hong Kong", "date_registered(1i)"=>"2013", "date_registered(2i)"=>"9", "date_registered(3i)"=>"10", "property_id"=>"1"}, "commit"=>"Create Landlord"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "landlords" ("address", "created_at", "date_registered", "email", "first_name", "last_name", "property_id", "tel", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["address", "Jordan, Hong Kong"], ["created_at", "2014-11-03 12:24:22.536702"], ["date_registered", "2013-09-10"], ["email", "stevo_parker@hotmail.com"], ["first_name", "Stephen"], ["last_name", "Parker"], ["property_id", 1], ["tel", "07789985798"], ["updated_at", "2014-11-03 12:24:22.536702"]]
+  [1m[35m (41.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/landlords/1
+Completed 302 Found in 56ms (ActiveRecord: 41.8ms)
+
+
+Started GET "/landlords/1" for 127.0.0.1 at 2014-11-03 20:24:22 +0800
+Processing by LandlordsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mLandlord Load (0.2ms)[0m  [1mSELECT  "landlords".* FROM "landlords"  WHERE "landlords"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered landlords/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 204ms (Views: 199.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-03 20:24:23 +0800
+
+
+Started GET "/landlords" for 127.0.0.1 at 2014-11-03 20:24:26 +0800
+Processing by LandlordsController#index as HTML
+  [1m[35mLandlord Load (0.2ms)[0m  SELECT "landlords".* FROM "landlords"
+  Rendered landlords/index.html.erb within layouts/application (5.1ms)
+Completed 200 OK in 194ms (Views: 192.6ms | ActiveRecord: 0.2ms)
+  [1m[36mProperty Load (1.5ms)[0m  [1mSELECT "properties".* FROM "properties"[0m
+  [1m[35mProperty Load (0.3ms)[0m  SELECT  "properties".* FROM "properties"  WHERE "properties"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mLandlord Load (0.2ms)[0m  [1mSELECT  "landlords".* FROM "landlords"  WHERE "landlords"."id" = ? LIMIT 1[0m  [["id", 1]]
+
+
+Started GET "/tenants" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TenantsController#index as HTML
+  [1m[35mTenant Load (0.1ms)[0m  SELECT "tenants".* FROM "tenants"
+  Rendered tenants/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 207ms (Views: 197.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-03 22:28:35 +0800
+
+
+Started GET "/tenants/new" for 127.0.0.1 at 2014-11-03 22:28:37 +0800
+Processing by TenantsController#new as HTML
+  Rendered tenants/_form.html.erb (16.7ms)
+  Rendered tenants/new.html.erb within layouts/application (20.3ms)
+Completed 200 OK in 135ms (Views: 124.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/tenants" for 127.0.0.1 at 2014-11-03 22:29:20 +0800
+Processing by TenantsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cHW2hvKXhlNaavsPY4WAWrp+3lOgT1hjg9yxTgcvFkw=", "tenant"=>{"first_name"=>"Tom", "last_name"=>"Tit", "email"=>"tom.tit@thrupneybit.co.uk", "tel"=>"079857444695", "lease_commenced(1i)"=>"2014", "lease_commenced(2i)"=>"11", "lease_commenced(3i)"=>"3", "lease_end(1i)"=>"2015", "lease_end(2i)"=>"11", "lease_end(3i)"=>"3", "property_id"=>"2"}, "commit"=>"Create Tenant"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  INSERT INTO "tenants" ("created_at", "email", "first_name", "last_name", "lease_commenced", "lease_end", "property_id", "tel", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["created_at", "2014-11-03 14:29:20.735604"], ["email", "tom.tit@thrupneybit.co.uk"], ["first_name", "Tom"], ["last_name", "Tit"], ["lease_commenced", "2014-11-03"], ["lease_end", "2015-11-03"], ["property_id", 2], ["tel", "079857444695"], ["updated_at", "2014-11-03 14:29:20.735604"]]
+  [1m[36m (24.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/tenants/1
+Completed 302 Found in 47ms (ActiveRecord: 25.1ms)
+
+
+Started GET "/tenants/1" for 127.0.0.1 at 2014-11-03 22:29:20 +0800
+Processing by TenantsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mTenant Load (0.1ms)[0m  SELECT  "tenants".* FROM "tenants"  WHERE "tenants"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered tenants/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 113ms (Views: 109.5ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-03 22:29:21 +0800
+  [1m[36mProperty Load (0.7ms)[0m  [1mSELECT "properties".* FROM "properties"[0m
+  [1m[35mProperty Load (0.2ms)[0m  SELECT  "properties".* FROM "properties"  WHERE "properties"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mLandlord Load (0.1ms)[0m  [1mSELECT  "landlords".* FROM "landlords"  WHERE "landlords"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTenant Load (0.2ms)[0m  SELECT "tenants".* FROM "tenants"
+
+
+Started GET "/properties" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+Processing by PropertiesController#index as HTML
+  [1m[36mProperty Load (0.2ms)[0m  [1mSELECT "properties".* FROM "properties"[0m
+  Rendered properties/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 128ms (Views: 124.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-03 22:32:00 +0800
+
+
+Started GET "/properties/new" for 127.0.0.1 at 2014-11-03 22:32:02 +0800
+Processing by PropertiesController#new as HTML
+  Rendered properties/_form.html.erb (4.8ms)
+  Rendered properties/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 112ms (Views: 110.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/properties" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+Processing by PropertiesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cHW2hvKXhlNaavsPY4WAWrp+3lOgT1hjg9yxTgcvFkw=", "property"=>{"address"=>"6 Grange Road, Croydon, CR2 0NA", "landlord_id"=>"1", "longitude"=>"", "latitude"=>"", "works"=>"1", "work_type"=>"Electrical"}, "commit"=>"Create Property"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "properties" ("address", "created_at", "landlord_id", "updated_at", "work_type", "works") VALUES (?, ?, ?, ?, ?, ?)[0m  [["address", "6 Grange Road, Croydon, CR2 0NA"], ["created_at", "2014-11-03 14:32:17.276114"], ["landlord_id", 1], ["updated_at", "2014-11-03 14:32:17.276114"], ["work_type", "Electrical"], ["works", "t"]]
+  [1m[35m (24.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/properties/2
+Completed 302 Found in 35ms (ActiveRecord: 24.6ms)
+
+
+Started GET "/properties/2" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+Processing by PropertiesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProperty Load (0.2ms)[0m  [1mSELECT  "properties".* FROM "properties"  WHERE "properties"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered properties/show.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 119ms (Views: 115.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-03 22:32:17 +0800
+  [1m[36mProperty Load (0.1ms)[0m  [1mSELECT  "properties".* FROM "properties"  WHERE "properties"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mLandlord Load (0.1ms)[0m  SELECT  "landlords".* FROM "landlords"  WHERE "landlords"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mTenant Load (0.2ms)[0m  [1mSELECT "tenants".* FROM "tenants"[0m
+  [1m[35mProperty Load (0.1ms)[0m  SELECT  "properties".* FROM "properties"  WHERE "properties"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mLandlord Load (0.1ms)[0m  [1mSELECT  "landlords".* FROM "landlords"  WHERE "landlords"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mTenant Load (0.4ms)[0m  SELECT  "tenants".* FROM "tenants"  WHERE "tenants"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mProperty Load (0.2ms)[0m  [1mSELECT  "properties".* FROM "properties"  WHERE "properties"."id" = ? LIMIT 1[0m  [["id", 2]]
+
+
+Started GET "/works" for 127.0.0.1 at 2014-11-03 22:39:11 +0800
+Processing by WorksController#index as HTML
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works"
+  Rendered works/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 107ms (Views: 105.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-03 22:39:12 +0800
+
+
+Started GET "/works/new" for 127.0.0.1 at 2014-11-03 22:39:15 +0800
+Processing by WorksController#new as HTML
+  Rendered works/_form.html.erb (9.6ms)
+  Rendered works/new.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 111ms (Views: 107.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/works" for 127.0.0.1 at 2014-11-03 22:39:32 +0800
+Processing by WorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cHW2hvKXhlNaavsPY4WAWrp+3lOgT1hjg9yxTgcvFkw=", "work"=>{"type"=>"Electrical", "raised_date(1i)"=>"2014", "raised_date(2i)"=>"11", "raised_date(3i)"=>"3", "due_date(1i)"=>"2014", "due_date(2i)"=>"11", "due_date(3i)"=>"10", "property_id"=>"1"}, "commit"=>"Create Work"}
+Completed 500  in 4ms
+
+ActiveRecord::SubclassNotFound - Invalid single-table inheritance type: Electrical is not a subclass of Work:
+  activerecord (4.1.6) lib/active_record/inheritance.rb:190:in `subclass_from_attributes'
+  activerecord (4.1.6) lib/active_record/inheritance.rb:24:in `new'
+  app/controllers/works_controller.rb:27:in `create'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/55f89b28381a4be3/variables" for 127.0.0.1 at 2014-11-03 22:39:32 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 107ms (Views: 106.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 23:17:53 +0800
+
+
+Started GET "/contractors" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+Processing by ContractorsController#index as HTML
+  [1m[36mContractor Load (0.1ms)[0m  [1mSELECT "contractors".* FROM "contractors"[0m
+  Rendered contractors/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 107ms (Views: 104.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-03 23:19:10 +0800
+
+
+Started GET "/contractors/new" for 127.0.0.1 at 2014-11-03 23:19:12 +0800
+Processing by ContractorsController#new as HTML
+  Rendered contractors/_form.html.erb (6.7ms)
+  Rendered contractors/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 104ms (Views: 100.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/contractors" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+Processing by ContractorsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cHW2hvKXhlNaavsPY4WAWrp+3lOgT1hjg9yxTgcvFkw=", "contractor"=>{"company_name"=>"Intersept", "industry_type"=>"Electrical", "email"=>"contact@intersept.co.uk", "tel"=>"0844 555 4331", "jobs_completed"=>"25", "jobs_feedback_good"=>"19", "jobs_feedback_bad"=>"6"}, "commit"=>"Create Contractor"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "contractors" ("company_name", "created_at", "email", "industry_type", "jobs_completed", "jobs_feedback_bad", "jobs_feedback_good", "tel", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["company_name", "Intersept"], ["created_at", "2014-11-03 15:19:38.282959"], ["email", "contact@intersept.co.uk"], ["industry_type", "Electrical"], ["jobs_completed", 25], ["jobs_feedback_bad", 6], ["jobs_feedback_good", 19], ["tel", "0844 555 4331"], ["updated_at", "2014-11-03 15:19:38.282959"]]
+  [1m[35m (26.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/contractors/1
+Completed 302 Found in 41ms (ActiveRecord: 27.4ms)
+
+
+Started GET "/contractors/1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+Processing by ContractorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mContractor Load (1.0ms)[0m  [1mSELECT  "contractors".* FROM "contractors"  WHERE "contractors"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered contractors/show.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 140ms (Views: 132.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-03 23:19:38 +0800
+
+
+Started GET "/contractors/1" for 127.0.0.1 at 2014-11-03 23:19:53 +0800
+Processing by ContractorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mContractor Load (0.1ms)[0m  SELECT  "contractors".* FROM "contractors"  WHERE "contractors"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered contractors/show.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 119ms (Views: 115.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/contractors/" for 127.0.0.1 at 2014-11-03 23:19:55 +0800
+Processing by ContractorsController#index as HTML
+  [1m[36mContractor Load (0.1ms)[0m  [1mSELECT "contractors".* FROM "contractors"[0m
+  Rendered contractors/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 116ms (Views: 113.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-03 23:19:56 +0800
+
+
+Started GET "/works" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+Processing by WorksController#index as HTML
+  [1m[35mWork Load (0.1ms)[0m  SELECT "works".* FROM "works"
+  Rendered works/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 105ms (Views: 104.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-03 23:21:39 +0800
+
+
+Started POST "/works" for 127.0.0.1 at 2014-11-03 23:21:44 +0800
+Processing by WorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cHW2hvKXhlNaavsPY4WAWrp+3lOgT1hjg9yxTgcvFkw=", "work"=>{"type"=>"Electrical", "raised_date(1i)"=>"2014", "raised_date(2i)"=>"11", "raised_date(3i)"=>"3", "due_date(1i)"=>"2014", "due_date(2i)"=>"11", "due_date(3i)"=>"10", "property_id"=>"1"}, "commit"=>"Create Work"}
+Completed 500  in 5ms
+
+ActiveRecord::SubclassNotFound - Invalid single-table inheritance type: Electrical is not a subclass of Work:
+  activerecord (4.1.6) lib/active_record/inheritance.rb:190:in `subclass_from_attributes'
+  activerecord (4.1.6) lib/active_record/inheritance.rb:24:in `new'
+  app/controllers/works_controller.rb:27:in `create'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/e1b94df3baf858bb/variables" for 127.0.0.1 at 2014-11-03 23:21:44 +0800
+  [1m[36mWork Load (0.7ms)[0m  [1mSELECT "works".* FROM "works"[0m
+
+
+Started POST "/works" for 127.0.0.1 at 2014-11-03 23:23:39 +0800
+Processing by WorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cHW2hvKXhlNaavsPY4WAWrp+3lOgT1hjg9yxTgcvFkw=", "work"=>{"type"=>"Electrical", "raised_date(1i)"=>"2014", "raised_date(2i)"=>"11", "raised_date(3i)"=>"3", "due_date(1i)"=>"2014", "due_date(2i)"=>"11", "due_date(3i)"=>"10", "property_id"=>"1"}, "commit"=>"Create Work"}
+Completed 500  in 3ms
+
+ActiveRecord::SubclassNotFound - Invalid single-table inheritance type: Electrical is not a subclass of Work:
+  activerecord (4.1.6) lib/active_record/inheritance.rb:190:in `subclass_from_attributes'
+  activerecord (4.1.6) lib/active_record/inheritance.rb:24:in `new'
+  app/controllers/works_controller.rb:27:in `create'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/aee438387f59d9da/variables" for 127.0.0.1 at 2014-11-03 23:23:39 +0800
+
+
+Started POST "/works" for 127.0.0.1 at 2014-11-03 23:25:35 +0800
+Processing by WorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cHW2hvKXhlNaavsPY4WAWrp+3lOgT1hjg9yxTgcvFkw=", "work"=>{"type"=>"Electrical", "raised_date(1i)"=>"2014", "raised_date(2i)"=>"11", "raised_date(3i)"=>"3", "due_date(1i)"=>"2014", "due_date(2i)"=>"11", "due_date(3i)"=>"10", "property_id"=>"1"}, "commit"=>"Create Work"}
+Completed 500  in 2ms
+
+SyntaxError - unterminated string meets end of file
+/home/stephen/workspace/PropertyManager/app/models/work.rb:2: syntax error, unexpected end-of-input, expecting keyword_end:
+  app/models/work.rb:2:in `'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:180:in `const_missing'
+  app/controllers/works_controller.rb:27:in `create'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/523c99f441b57e0d/variables" for 127.0.0.1 at 2014-11-03 23:25:35 +0800
+
+
+Started POST "/works" for 127.0.0.1 at 2014-11-03 23:25:49 +0800
+Processing by WorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cHW2hvKXhlNaavsPY4WAWrp+3lOgT1hjg9yxTgcvFkw=", "work"=>{"type"=>"Electrical", "raised_date(1i)"=>"2014", "raised_date(2i)"=>"11", "raised_date(3i)"=>"3", "due_date(1i)"=>"2014", "due_date(2i)"=>"11", "due_date(3i)"=>"10", "property_id"=>"1"}, "commit"=>"Create Work"}
+Completed 500  in 1ms
+
+SyntaxError - unterminated string meets end of file
+/home/stephen/workspace/PropertyManager/app/models/work.rb:2: syntax error, unexpected end-of-input, expecting keyword_end:
+  app/models/work.rb:2:in `'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:443:in `block in load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:633:in `new_constants_in'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:442:in `load_file'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:342:in `require_or_load'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:480:in `load_missing_constant'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:180:in `const_missing'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:512:in `load_missing_constant'
+  activesupport (4.1.6) lib/active_support/dependencies.rb:180:in `const_missing'
+  app/controllers/works_controller.rb:27:in `create'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/b0ac74977c1b9daa/variables" for 127.0.0.1 at 2014-11-03 23:25:49 +0800
+
+
+Started POST "/works" for 127.0.0.1 at 2014-11-03 23:26:57 +0800
+Processing by WorksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cHW2hvKXhlNaavsPY4WAWrp+3lOgT1hjg9yxTgcvFkw=", "work"=>{"type"=>"Electrical", "raised_date(1i)"=>"2014", "raised_date(2i)"=>"11", "raised_date(3i)"=>"3", "due_date(1i)"=>"2014", "due_date(2i)"=>"11", "due_date(3i)"=>"10", "property_id"=>"1"}, "commit"=>"Create Work"}
+Completed 500  in 6ms
+
+ActiveRecord::SubclassNotFound - Invalid single-table inheritance type: Electrical is not a subclass of Work:
+  activerecord (4.1.6) lib/active_record/inheritance.rb:190:in `subclass_from_attributes'
+  activerecord (4.1.6) lib/active_record/inheritance.rb:24:in `new'
+  app/controllers/works_controller.rb:27:in `create'
+  actionpack (4.1.6) lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:189:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:113:in `call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:149:in `block in halting_and_conditional'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:229:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:166:in `block in halting'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:86:in `run_callbacks'
+  actionpack (4.1.6) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:31:in `block in process_action'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `block in instrument'
+  activesupport (4.1.6) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.1.6) lib/active_support/notifications.rb:159:in `instrument'
+  actionpack (4.1.6) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.1.6) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.1.6) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.1.6) lib/abstract_controller/base.rb:136:in `process'
+  actionview (4.1.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.1.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.1.6) lib/action_controller/metal.rb:232:in `block in action'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:82:in `dispatch'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:50:in `call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:73:in `block in call'
+  actionpack (4.1.6) lib/action_dispatch/journey/router.rb:59:in `call'
+  actionpack (4.1.6) lib/action_dispatch/routing/route_set.rb:678:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/app_request_handler.rb:13:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/meta_request_handler.rb:13:in `call'
+  rack (1.5.2) lib/rack/etag.rb:23:in `call'
+  rack (1.5.2) lib/rack/conditionalget.rb:35:in `call'
+  rack (1.5.2) lib/rack/head.rb:11:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/flash.rb:254:in `call'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.5.2) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.1.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.1.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:621:in `call'
+  activerecord (4.1.6) lib/active_record/migration.rb:380:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.1.6) lib/active_support/callbacks.rb:82:in `run_callbacks'
+  actionpack (4.1.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/remote_ip.rb:76:in `call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.0.0) lib/better_errors/middleware.rb:57:in `call'
+  rack-contrib (1.2.0) lib/rack/contrib/response_headers.rb:17:in `call'
+  meta_request (0.3.4) lib/meta_request/middlewares/headers.rb:16:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.1.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.1.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.1.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.5.2) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.5.2) lib/rack/runtime.rb:17:in `call'
+  activesupport (4.1.6) lib/active_support/cache/strategy/local_cache_middleware.rb:26:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  actionpack (4.1.6) lib/action_dispatch/middleware/static.rb:64:in `call'
+  rack (1.5.2) lib/rack/sendfile.rb:112:in `call'
+  railties (4.1.6) lib/rails/engine.rb:514:in `call'
+  railties (4.1.6) lib/rails/application.rb:144:in `call'
+  rack (1.5.2) lib/rack/lock.rb:17:in `call'
+  rack (1.5.2) lib/rack/content_length.rb:14:in `call'
+  rack (1.5.2) lib/rack/handler/webrick.rb:60:in `service'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:138:in `service'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/httpserver.rb:94:in `run'
+  /home/stephen/.rvm/rubies/ruby-2.1.1/lib/ruby/2.1.0/webrick/server.rb:295:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/31b4303cc7954667/variables" for 127.0.0.1 at 2014-11-03 23:26:57 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 100ms (Views: 99.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:27 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-03 23:28:31 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 127ms (Views: 126.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:31 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:31 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:31 +0800
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:31 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:31 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:31 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:32 +0800
+
+
+Started GET "/properties/" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+Processing by PropertiesController#index as HTML
+  [1m[36mProperty Load (0.7ms)[0m  [1mSELECT "properties".* FROM "properties"[0m
+  Rendered properties/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 130ms (Views: 126.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/assets/bootstrap/glyphicons-halflings-regular.woff" for 127.0.0.1 at 2014-11-03 23:28:36 +0800
+
+
+Started GET "/" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 110ms (Views: 109.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/bootstrap-generators.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+
+
+Started GET "/assets/bootstrap-variables.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+
+
+Started GET "/assets/welcome.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+
+
+Started GET "/assets/bootstrap/collapse.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+
+
+Started GET "/assets/bootstrap/modal.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+
+
+Started GET "/assets/bootstrap/button.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+
+
+Started GET "/assets/bootstrap/affix.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+
+
+Started GET "/assets/bootstrap/tab.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+
+
+Started GET "/assets/bootstrap/alert.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+
+
+Started GET "/assets/bootstrap/transition.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+
+
+Started GET "/assets/bootstrap/tooltip.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:43 +0800
+
+
+Started GET "/assets/bootstrap/popover.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:44 +0800
+
+
+Started GET "/assets/bootstrap/scrollspy.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:44 +0800
+
+
+Started GET "/assets/bootstrap/dropdown.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:44 +0800
+
+
+Started GET "/assets/bootstrap/carousel.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:44 +0800
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:44 +0800
+
+
+Started GET "/assets/contractors.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:44 +0800
+
+
+Started GET "/assets/landlords.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:44 +0800
+
+
+Started GET "/assets/properties.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:44 +0800
+
+
+Started GET "/assets/tenants.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:44 +0800
+
+
+Started GET "/assets/welcome.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:44 +0800
+
+
+Started GET "/assets/works.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:44 +0800
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-11-03 23:28:44 +0800
