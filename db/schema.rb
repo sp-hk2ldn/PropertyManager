@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141103120739) do
+ActiveRecord::Schema.define(version: 20141104143055) do
 
   create_table "contractors", force: true do |t|
     t.string   "company_name"
@@ -61,12 +61,12 @@ ActiveRecord::Schema.define(version: 20141103120739) do
   end
 
   create_table "works", force: true do |t|
-    t.string   "type"
     t.date     "raised_date"
     t.date     "due_date"
     t.integer  "property_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "work_type"
   end
 
 end
