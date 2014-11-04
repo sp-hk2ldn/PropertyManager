@@ -12,6 +12,8 @@ gem "twitter-bootstrap-rails"
 gem 'font-awesome-rails'
 gem 'autoprefixer-rails'
 gem 'bootswatch-rails'
+gem 'geocoder'
+gem 'gmaps4rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .js.coffee assets and views
