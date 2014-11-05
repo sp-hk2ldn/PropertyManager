@@ -10,6 +10,12 @@ class PropertiesController < ApplicationController
   # GET /properties/1
   # GET /properties/1.json
   def show
+    @property = Property.find(params[:id])
+    @property_marker = Gmaps4rails.build_markers(@property) do |prop, marker|
+      marker.lat prop.latitude
+      marker.lng prop.longitude
+      marker.infowindow prop.address
+    end
   end
 
   # GET /properties/new

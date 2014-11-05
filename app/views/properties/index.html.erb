@@ -3,7 +3,7 @@
     <span class="glyphicon glyphicon-plus"></span>
     New Property
   <% end %>
-  <h1>Listing properties</h1>
+  <h1>Managed Property List</h1>
 </div>
 
 <div class="table-responsive">
@@ -14,7 +14,7 @@
             <th>Landlord</th>
             <th>Longitude</th>
             <th>Latitude</th>
-            <th>Works</th>
+            <th>Works Active?</th>
             <th>Work type</th>
             <th></th>
         <th></th>
@@ -28,7 +28,11 @@
             <td><%= property.landlord_id %></td>
             <td><%= property.longitude %></td>
             <td><%= property.latitude %></td>
-            <td><%= property.works %></td>
+            <% if property.works == true %>
+            <td>Yes</td>
+            <% else %>
+            <td> No </td>
+            <% end %>
             <td><%= property.work_type %></td>
             <td><%= link_to 'Show', property %></td>
         <td><%= link_to 'Edit', edit_property_path(property) %></td>
