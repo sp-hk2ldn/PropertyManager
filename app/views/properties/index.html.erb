@@ -15,7 +15,6 @@
             <th>Longitude</th>
             <th>Latitude</th>
             <th>Works Active?</th>
-            <th>Work type</th>
             <th></th>
         <th></th>
         <th></th>
@@ -33,7 +32,6 @@
             <% else %>
             <td> No </td>
             <% end %>
-            <td><%= property.work_type %></td>
             <td><%= link_to 'Show', property %></td>
         <td><%= link_to 'Edit', edit_property_path(property) %></td>
         <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>

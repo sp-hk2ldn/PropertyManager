@@ -7,4 +7,6 @@ class Property < ActiveRecord::Base
 	
 	validates :latitude, :longitude, :landlord, presence: true
 	accepts_nested_attributes_for :landlord, :tenant
+
+	has_many :works
 end

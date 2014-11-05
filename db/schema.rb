@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141104143055) do
+ActiveRecord::Schema.define(version: 20141105102133) do
 
   create_table "contractors", force: true do |t|
     t.string   "company_name"
@@ -43,7 +43,6 @@ ActiveRecord::Schema.define(version: 20141104143055) do
     t.float    "longitude"
     t.float    "latitude"
     t.boolean  "works"
-    t.string   "work_type"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -66,7 +65,7 @@ ActiveRecord::Schema.define(version: 20141104143055) do
     t.integer  "property_id"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "work_type"
+    t.string   "job_type"
   end
 
 end

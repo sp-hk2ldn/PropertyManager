@@ -69,6 +69,6 @@ class WorksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def work_params
-      params.require(:work).permit(:type, :raised_date, :due_date, :property_id)
+      params.require(:work).permit(:job_type, :raised_date, :due_date, :property_id)
     end
 end

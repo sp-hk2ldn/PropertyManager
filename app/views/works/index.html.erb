@@ -10,7 +10,7 @@
   <table class="table table-striped table-bordered table-hover">
     <thead>
       <tr>
-            <th>Work Type</th>
+            <th>Job Type</th>
             <th>Raised date</th>
             <th>Due date</th>
             <th>Property</th>
@@ -22,7 +22,7 @@
 
     <tbody>
       <%= content_tag_for(:tr, @works) do |work| %>
-            <td><%= work.work_type %></td>
+            <td><%= work.job_type %></td>
             <td><%= work.raised_date %></td>
             <td><%= work.due_date %></td>
             <td><%= work.property_id %></td>
