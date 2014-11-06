@@ -16,6 +16,7 @@ class PropertiesController < ApplicationController
       marker.lng prop.longitude
       marker.infowindow prop.address
     @tenant = Tenant.where(params[:property_id])
+    @job_count = Work.where(params[:property_id]).count
     end
   end
 
@@ -31,13 +32,16 @@ class PropertiesController < ApplicationController
   # POST /properties
   # POST /properties.json
   def create
+    puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
     @property = Property.new(property_params)
+    puts @property.works
 
     respond_to do |format|
       if @property.save
         format.html { redirect_to @property, notice: 'Property was successfully created.' }
         format.json { render :show, status: :created, location: @property }
       else
+        puts "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<it didn't save"
         format.html { render :new }
         format.json { render json: @property.errors, status: :unprocessable_entity }
       end
@@ -76,6 +80,6 @@ class PropertiesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def property_params
-      params.require(:property).permit(:address, :landlord_id, :longitude, :latitude, :works, :work_type)
+      params.require(:property).permit(:address, :landlord_id, :longitude, :latitude, :active_job)
     end
 end

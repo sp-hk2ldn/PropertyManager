@@ -11,7 +11,7 @@
   <!--[if lt IE 9]>
     <%= javascript_include_tag "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js", "https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js" %>
   <![endif]-->
-
+  <%= stylesheet_link_tag 'font-awesome-animation' %>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => false %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => false %>
   <%= csrf_meta_tags %>
@@ -26,6 +26,7 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
+        <div class="navbar-brand"><i class="fa fa-space-shuttle faa-passing animated"></i></div>
         <%= link_to "Property Pilot", "/", :class => "navbar-brand" %>
       </div>
       <div class="collapse navbar-collapse">
