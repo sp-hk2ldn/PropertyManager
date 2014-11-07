@@ -4,12 +4,27 @@ class PropertiesController < ApplicationController
   # GET /properties
   # GET /properties.json
   def index
+    @jobs = Work.all
     @properties = Property.all
+    @properties.each do |prop|
+      @jobs.each do |job|
+        if job.property_id == prop.id
+          puts "setting property id #{prop.id} to active_job = 1"
+          # prop.active_job = "1"
+          prop.update(active_job: "1")
+          break
+        else
+          puts "setting property id #{prop.id} to active_job = 0"
+          prop.active_job = "0"
+        end
+      end
+    end
   end
-
   # GET /properties/1
   # GET /properties/1.json
   def show
+
+
     @property = Property.find(params[:id])
     @property_marker = Gmaps4rails.build_markers(@property) do |prop, marker|
       marker.lat prop.latitude

@@ -28,9 +28,9 @@
             <td><%= property.longitude %></td>
             <td><%= property.latitude %></td>
             <% if property.active_job == "1" %>
-            <td>Yes</td>
+              <td>Yes</td>
             <% else %>
-            <td> No </td>
+              <td> No </td>
             <% end %>
             <td><%= link_to 'Show', property %></td>
         <td><%= link_to 'Edit', edit_property_path(property) %></td>
