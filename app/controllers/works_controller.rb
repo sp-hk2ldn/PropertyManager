@@ -5,6 +5,11 @@ class WorksController < ApplicationController
   # GET /works.json
   def index
     @works = Work.all
+    @properties = Property.all
+    @works.each do |job|
+      @job_hash = Hash.new
+      binding.pry
+    end
   end
 
   # GET /works/1

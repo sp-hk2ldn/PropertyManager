@@ -33,7 +33,7 @@
         <li>Tel: <%= @property.landlord.tel %></li>
         <li>Address: <%= @property.landlord.address %></li>
         <li>Customer Since: <%= @property.landlord.date_registered.to_formatted_s(:long) %></li>
-        <li>Properties Registered: </li>
+        <li>Properties Registered: <%= @property_count %></li>
       </ul>
     </div>
     <div class="col-md-4">
@@ -47,10 +47,10 @@
     </div>
     <div class="col-md-4">
       <ul>
-        <% if @property.works == false %>
-        <li>There are currently <strong>no</strong> work orders outstanding on this property.</li>
+        <% if @job_count == 0 %>
+          <li>There are currently <strong>no</strong> work orders outstanding on this property.</li>
         <% else %>
-        <li>There are currently <%= @job_count %> work orders outstanding on this property.</li>
+          <li>There are currently <%= @job_count %> work orders outstanding on this property.</li>
         <% end %>
     </div>
   </div>
@@ -58,7 +58,7 @@
 </div>
 
 <script type="text/javascript">
-mapStyle = [{"featureType":"landscape","stylers":[{"color":"#6c8080"},{"visibility":"simplified"}]},{"featureType":"administrative","elementType":"labels.text","stylers":[{"visibility":"on"}]},{"featureType":"road","stylers":[{"visibility":"simplified"}]},{"featureType":"poi","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"visibility":"on"}]},{"featureType":"transit","elementType":"labels","stylers":[{"visibility":"on"}]},{"elementType":"labels","stylers":[{"visibility":"on"}]},{"featureType":"road.highway","stylers":[{"color":"#d98080"},{"hue":"#eeff00"},{"lightness":100},{"weight":1.5}]}]
+mapStyle = [{"featureType":"water","stylers":[{"color":"#19a0d8"}]},{"featureType":"administrative","elementType":"labels.text.stroke","stylers":[{"color":"#ffffff"},{"weight":6}]},{"featureType":"administrative","elementType":"labels.text.fill","stylers":[{"color":"#e85113"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efe9e4"},{"lightness":-40}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"color":"#efe9e4"},{"lightness":-20}]},{"featureType":"road","elementType":"labels.text.stroke","stylers":[{"lightness":100}]},{"featureType":"road","elementType":"labels.text.fill","stylers":[{"lightness":-100}]},{"featureType":"road.highway","elementType":"labels.icon"},{"featureType":"landscape","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"landscape","stylers":[{"lightness":20},{"color":"#efe9e4"}]},{"featureType":"landscape.man_made","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"lightness":100}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"lightness":-100}]},{"featureType":"poi","elementType":"labels.text.fill","stylers":[{"hue":"#11ff00"}]},{"featureType":"poi","elementType":"labels.text.stroke","stylers":[{"lightness":100}]},{"featureType":"poi","elementType":"labels.icon","stylers":[{"hue":"#4cff00"},{"saturation":58}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"on"},{"color":"#f0e4d3"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#efe9e4"},{"lightness":-25}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#efe9e4"},{"lightness":-10}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"simplified"}]}]
 handler = Gmaps.build('Google');
 handler.buildMap({ provider: {styles: mapStyle}, internal: {id: 'map'}}, function(){
   markers = handler.addMarkers(<%=raw @property_marker.to_json %>);

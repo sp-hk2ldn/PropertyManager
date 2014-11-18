@@ -9,12 +9,10 @@ class PropertiesController < ApplicationController
     @properties.each do |prop|
       @jobs.each do |job|
         if job.property_id == prop.id
-          puts "setting property id #{prop.id} to active_job = 1"
           # prop.active_job = "1"
           prop.update(active_job: "1")
           break
         else
-          puts "setting property id #{prop.id} to active_job = 0"
           prop.active_job = "0"
         end
       end
@@ -23,15 +21,14 @@ class PropertiesController < ApplicationController
   # GET /properties/1
   # GET /properties/1.json
   def show
-
-
     @property = Property.find(params[:id])
     @property_marker = Gmaps4rails.build_markers(@property) do |prop, marker|
       marker.lat prop.latitude
       marker.lng prop.longitude
       marker.infowindow prop.address
-    @tenant = Tenant.where(params[:property_id])
-    @job_count = Work.where(params[:property_id]).count
+    @tenant = Tenant.where(params[:id])
+    @job_count = Work.where(property_id: params[:id] ).count #specify key before paramater
+    @property_count = Property.where(landlord_id: @property.landlord_id).count
     end
   end
 
@@ -47,7 +44,6 @@ class PropertiesController < ApplicationController
   # POST /properties
   # POST /properties.json
   def create
-    puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
     @property = Property.new(property_params)
     puts @property.works
 
@@ -56,7 +52,6 @@ class PropertiesController < ApplicationController
         format.html { redirect_to @property, notice: 'Property was successfully created.' }
         format.json { render :show, status: :created, location: @property }
       else
-        puts "<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<it didn't save"
         format.html { render :new }
         format.json { render json: @property.errors, status: :unprocessable_entity }
       end
