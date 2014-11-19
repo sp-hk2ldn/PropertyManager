@@ -54,6 +54,9 @@ group :development do
   #> https://github.com/rweng/pry-rails
   gem 'pry-rails'
 end
+group :production do
+  gem 'rails_12factor'
+end
 
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
