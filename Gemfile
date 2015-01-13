@@ -33,6 +33,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background.
   #> https://github.com/rails/spring
   gem 'spring'
+  gem 'awesome_print'
 
   # Better Errors replaces the standard Rails error page with a much better and more useful error page.
   #> https://github.com/charliesome/better_errors
