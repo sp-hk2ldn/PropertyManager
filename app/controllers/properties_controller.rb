@@ -31,7 +31,7 @@ class PropertiesController < ApplicationController
       marker.lng prop.longitude
       marker.infowindow prop.address
     @tenant = Tenant.where(params[:property_id])
-    @job_count = Work.where(params[:property_id]).count
+    @job_count = Work.where(property_id:params[:id]).count
     end
   end
 
@@ -48,7 +48,6 @@ class PropertiesController < ApplicationController
   # POST /properties.json
   def create
     @property = Property.new(property_params)
-    puts @property.works
 
     respond_to do |format|
       if @property.save

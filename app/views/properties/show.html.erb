@@ -47,7 +47,7 @@
     </div>
     <div class="col-md-4">
       <ul>
-        <% if @property.works == false %>
+        <% if @property.active_job == nil %>
         <li>There are currently <strong>no</strong> work orders outstanding on this property.</li>
         <% else %>
         <li>There are currently <%= @job_count %> work orders outstanding on this property.</li>

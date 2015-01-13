@@ -15,6 +15,7 @@ class WorksController < ApplicationController
   # GET /works/new
   def new
     @work = Work.new
+    @property = Property.all
   end
 
   # GET /works/1/edit
