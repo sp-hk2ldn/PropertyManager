@@ -15,7 +15,7 @@
             <th>Longitude</th>
             <th>Latitude</th>
             <th>Works Active?</th>
-            <th></th>
+            <th>Admin</th>
         <th></th>
         <th></th>
       </tr>
@@ -23,8 +23,8 @@
 
     <tbody>
       <%= content_tag_for(:tr, @properties) do |property| %>
-            <td><%= property.address %></td>
-            <td><%= property.landlord_id %></td>
+            <td><%= link_to property.address, property %></td>
+            <td><%= link_to property.landlord.first_name + ' ' + property.landlord.last_name, property.landlord %></td>
             <td><%= property.longitude %></td>
             <td><%= property.latitude %></td>
             <% if property.active_job == "1" %>
@@ -32,9 +32,8 @@
             <% else %>
               <td> No </td>
             <% end %>
-            <td><%= link_to 'Show', property %></td>
         <td><%= link_to 'Edit', edit_property_path(property) %></td>
-        <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure? This cannot be undone!' } %></td>
       <% end %>
     </tbody>
   </table>

@@ -47,7 +47,6 @@ class PropertiesController < ApplicationController
   # POST /properties
   # POST /properties.json
   def create
-    puts ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
     @property = Property.new(property_params)
     puts @property.works
 
