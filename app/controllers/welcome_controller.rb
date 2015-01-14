@@ -9,4 +9,10 @@ class WelcomeController < ApplicationController
     puts @all_property_markers
     end
 	end
+  def get_data
+    @properties = Property.all.count
+    respond_to do |format|
+      format.json { render json: @properties }
+    end
+  end
 end
