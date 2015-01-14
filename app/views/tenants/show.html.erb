@@ -7,7 +7,7 @@
     <span class="glyphicon glyphicon-pencil"></span>
     Edit
   <% end %>
-  <h1>Show tenant</h1>
+  <h1><%= @tenant.first_name + " " + @tenant.last_name %>, Tenant</h1>
 </div>
 
 <dl class="dl-horizontal">
@@ -29,7 +29,7 @@
   <dt>Lease end:</dt>
   <dd><%= @tenant.lease_end %></dd>
 
-  <dt>Property:</dt>
-  <dd><%= @tenant.property_id %></dd>
+  <dt>Property Address:</dt>
+  <dd><%= @tenant.property.address %></dd>
 
 </dl>

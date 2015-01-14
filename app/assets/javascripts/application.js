@@ -16,3 +16,4 @@
 //= require underscore
 //= require welcome
 //= require gmaps/google
+//= require_tree .

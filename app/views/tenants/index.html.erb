@@ -16,7 +16,7 @@
             <th>Tel</th>
             <th>Lease commenced</th>
             <th>Lease end</th>
-            <th>Property</th>
+            <th>Property Address</th>
             <th></th>
         <th></th>
         <th></th>
@@ -34,7 +34,7 @@
             <td><%= tenant.property_id %></td>
             <td><%= link_to 'Show', tenant %></td>
         <td><%= link_to 'Edit', edit_tenant_path(tenant) %></td>
-        <td><%= link_to 'Destroy', tenant, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Destroy', tenant, method: :delete, data: { confirm: 'Are you sure? This cannot be undone!' } %></td>
       <% end %>
     </tbody>
   </table>

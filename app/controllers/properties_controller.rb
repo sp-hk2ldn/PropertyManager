@@ -5,7 +5,7 @@ class PropertiesController < ApplicationController
   # GET /properties.json
   def index
     @jobs = Work.all
-    @properties = Property.all
+    @properties = Property.all    
     @properties.each do |prop|
       @jobs.each do |job|
         if job.property_id == prop.id

@@ -1,6 +1,13 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-h1 {
-	color:red;
+
+#map {
+  margin-top:50px;
+  height:600px;
+  border:4px solid #bf5a16;
+}
+
+.gm-style-iw {
+  color: black;
 }

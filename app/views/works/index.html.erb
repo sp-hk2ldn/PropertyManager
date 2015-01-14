@@ -13,7 +13,7 @@
             <th>Job Type</th>
             <th>Raised date</th>
             <th>Due date</th>
-            <th>Property</th>
+            <th>Property Address</th>
             <th></th>
         <th></th>
         <th></th>
@@ -24,8 +24,12 @@
       <%= content_tag_for(:tr, @works) do |work| %>
             <td><%= work.job_type %></td>
             <td><%= work.raised_date %></td>
-            <td><%= work.due_date %></td>
-            <td><%= work.property_id %></td>
+            <% if work.due_date < Date.current + 7 %>
+              <td class="due-within-week"><%= work.due_date %></td>
+              <% else %>
+                <td><%= work.due_date %></td>
+            <% end %>
+            <td><%= work.property.address %></td>
             <td><%= link_to 'Show', work %></td>
         <td><%= link_to 'Edit', edit_work_path(work) %></td>
         <td><%= link_to 'Destroy', work, method: :delete, data: { confirm: 'Are you sure?' } %></td>
