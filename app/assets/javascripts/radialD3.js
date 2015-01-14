@@ -27,12 +27,12 @@ function radialProgress(parent) {
     var _data=null,
         _duration= 1000,
         _selection,
-        _margin = {top:0, right:0, bottom:30, left:0},
+        _margin = {top:0, right:0, bottom:20, left:0},
         __width = 300,
         __height = 300,
         _diameter,
         _label="",
-        _fontSize=10;
+        _fontSize=50;
 
 
     var _mouseClick;
@@ -164,7 +164,7 @@ function radialProgress(parent) {
 
         return function(t) {
             _currentValue = i(t);
-            this.textContent = Math.round(i(t)) + "%";
+            this.textContent = Math.round(i(t)); // i removed  + "%" from here
         }
     }
 

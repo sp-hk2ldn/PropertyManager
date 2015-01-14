@@ -12,8 +12,8 @@
       <tr>
             <th>Address</th>
             <th>Landlord</th>
-            <th>Longitude</th>
-            <th>Latitude</th>
+            <th>Tenant</th>
+            <th>End of Lease</th>
             <th>Works Active?</th>
             <th>Admin</th>
         <th></th>
@@ -25,8 +25,30 @@
       <%= content_tag_for(:tr, @properties) do |property| %>
             <td><%= link_to property.address, property %></td>
             <td><%= link_to property.landlord.first_name + ' ' + property.landlord.last_name, property.landlord %></td>
-            <td><%= property.longitude %></td>
-            <td><%= property.latitude %></td>
+            <%= @tenant.find_each do |tenant| %>
+              <% if tenant.property_id == property.id %>
+                <td><%= tenant.first_name + ' ' + tenant.last_name %></td>
+                <% @tenant_boolean = true %>
+                <% break %>
+              <% else %>
+                <% @tenant_boolean = false %>
+              <% end %>
+            <% end %>
+            <% if @tenant_boolean == false %>
+              <td>No Tenant!</td>
+            <% end %>
+            <%= @tenant.find_each do |tenant| %>
+              <% if tenant.property_id == property.id %>
+                <td><%= tenant.lease_end %></td>
+                <% @tenant_lease_boolean = true %>
+                <% break %>
+              <% else %>
+                <% @tenant_lease_boolean = false %>
+              <% end %>
+            <% end %>
+            <% if @tenant_lease_boolean == false %>
+              <td>N/A</td>
+            <% end %>
             <% if property.active_job == "1" %>
               <td>Yes</td>
             <% else %>

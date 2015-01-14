@@ -4,6 +4,7 @@ class PropertiesController < ApplicationController
   # GET /properties
   # GET /properties.json
   def index
+    @tenant = Tenant.all
     @jobs = Work.all
     @properties = Property.all    
     @properties.each do |prop|
