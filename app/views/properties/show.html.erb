@@ -27,8 +27,8 @@
   </div>
   <div id="landlord-tenant-infos" class="row">
     <div class="col-md-4">
-      <ul>
-        <li>Landlord Name: <%= @property.landlord.first_name + ' ' + @property.landlord.last_name %></li>
+      <ul class="property-details-list">
+        <li>Landlord Name: <%= link_to @property.landlord.first_name + ' ' + @property.landlord.last_name, '/landlords/' + @property.landlord.id.to_s %></li>
         <li>Email: <%= @property.landlord.email %></li>
         <li>Tel: <%= @property.landlord.tel %></li>
         <li>Address: <%= @property.landlord.address %></li>
@@ -36,16 +36,29 @@
       </ul>
     </div>
     <div class="col-md-4">
-      <ul>
-        <li>Tenant name: <%= @tenant.first.first_name + ' ' + @tenant.first.last_name %></li>
-        <li>Email: <%= @tenant.first.email %></li>
-        <li>Tel: <%= @tenant.first.tel %></li>
-        <li>Lease Started: <%= @tenant.first.lease_commenced.to_formatted_s(:long) %></li>
-        <li>Lease Ends: <%= @tenant.first.lease_end.to_formatted_s(:long)%> (<%= (Date.today - @tenant.first.lease_end).to_i / 7 %> Weeks Left)</li>
+      <ul class="property-details-list">
+            <%= @tenant.find_each do |tenant| %>
+              <% if tenant.property_id == @property.id %>
+                <li><%= tenant.first_name + ' ' + tenant.last_name %></li>
+                <li>Email: <%= tenant.email %></li>
+                <li>Tel: <%= tenant.tel %></li>
+                <li>Lease Started: <%= tenant.lease_commenced.to_formatted_s(:long) %></li>
+                <li>Lease Ends: <%= tenant.lease_end.to_formatted_s(:long)%> (<%= (Date.today - tenant.lease_end).to_i / 7 %> Weeks Left)</li>
+                <% @tenant_boolean = true %>
+                <% break %>
+              <% else %>
+                <% @tenant_boolean = false %>
+              <% end %>
+            <% end %>
+            <% if @tenant_boolean == false %>
+              <li>No Tenant!</li>
+              <li>No Lease Pending!</li>
+            <% end %>
+        
       </ul>
     </div>
     <div class="col-md-4">
-      <ul>
+      <ul class="property-details-list">
         <% if @property.active_job == nil %>
         <li>There are currently <strong>no</strong> work orders outstanding on this property.</li>
         <% else %>

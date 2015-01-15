@@ -27,7 +27,7 @@
             <td><%= link_to property.landlord.first_name + ' ' + property.landlord.last_name, property.landlord %></td>
             <%= @tenant.find_each do |tenant| %>
               <% if tenant.property_id == property.id %>
-                <td><%= tenant.first_name + ' ' + tenant.last_name %></td>
+                <td><%= link_to tenant.first_name + ' ' + tenant.last_name, 'tenants/' + tenant.id.to_s %></td>
                 <% @tenant_boolean = true %>
                 <% break %>
               <% else %>

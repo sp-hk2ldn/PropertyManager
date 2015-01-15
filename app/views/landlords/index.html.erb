@@ -3,7 +3,7 @@
     <span class="glyphicon glyphicon-plus"></span>
     New Landlord
   <% end %>
-  <h1>Listing landlords</h1>
+  <h1>Landlord Registry</h1>
 </div>
 
 <div class="table-responsive">
@@ -16,8 +16,7 @@
             <th>Tel</th>
             <th>Address</th>
             <th>Date registered</th>
-            <th>Property</th>
-            <th></th>
+            <th>Admin</th>
         <th></th>
         <th></th>
       </tr>
@@ -31,7 +30,6 @@
             <td><%= landlord.tel %></td>
             <td><%= landlord.address %></td>
             <td><%= landlord.date_registered %></td>
-            <td><%= landlord.property_id %></td>
             <td><%= link_to 'Show', landlord %></td>
         <td><%= link_to 'Edit', edit_landlord_path(landlord) %></td>
         <td><%= link_to 'Destroy', landlord, method: :delete, data: { confirm: 'Are you sure?' } %></td>

@@ -31,7 +31,7 @@ class PropertiesController < ApplicationController
       marker.lat prop.latitude
       marker.lng prop.longitude
       marker.infowindow prop.address
-    @tenant = Tenant.where(params[:property_id])
+    @tenant = Tenant.all
     @job_count = Work.where(property_id:params[:id]).count
     end
   end
