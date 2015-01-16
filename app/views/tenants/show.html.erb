@@ -30,6 +30,6 @@
   <dd><%= @tenant.lease_end %></dd>
 
   <dt>Property Address:</dt>
-  <dd><%= @tenant.property.address %></dd>
+  <dd><%= link_to @tenant.property.address, '/properties/' + @tenant.property.id.to_s %></dd>
 
 </dl>

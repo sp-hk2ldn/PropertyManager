@@ -31,7 +31,7 @@
             <td><%= tenant.tel %></td>
             <td><%= tenant.lease_commenced %></td>
             <td><%= tenant.lease_end %></td>
-            <td><%= tenant.property_id %></td>
+            <td><%= tenant.property.address %></td>
             <td><%= link_to 'Show', tenant %></td>
         <td><%= link_to 'Edit', edit_tenant_path(tenant) %></td>
         <td><%= link_to 'Destroy', tenant, method: :delete, data: { confirm: 'Are you sure? This cannot be undone!' } %></td>

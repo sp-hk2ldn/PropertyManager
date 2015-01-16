@@ -43,7 +43,11 @@
                 <li>Email: <%= tenant.email %></li>
                 <li>Tel: <%= tenant.tel %></li>
                 <li>Lease Started: <%= tenant.lease_commenced.to_formatted_s(:long) %></li>
-                <li>Lease Ends: <%= tenant.lease_end.to_formatted_s(:long)%> (<%= (Date.today - tenant.lease_end).to_i / 7 %> Weeks Left)</li>
+                <% if tenant.lease_end < 0.day.ago %>
+                  <li>Lease ended on <%= tenant.lease_end.to_formatted_s(:long) %>
+                <% else %> 
+                  <li>Lease Ends: <%= tenant.lease_end.to_formatted_s(:long)%> (<%= (Date.today - tenant.lease_end).to_i / 7 %> Weeks Left)</li>
+                <% end %>
                 <% @tenant_boolean = true %>
                 <% break %>
               <% else %>
@@ -52,7 +56,7 @@
             <% end %>
             <% if @tenant_boolean == false %>
               <li>No Tenant!</li>
-              <li>No Lease Pending!</li>
+              <li>No Lease Pending!</li> <!-- change this to be dynamic if there is a lease coming up -->
             <% end %>
         
       </ul>
