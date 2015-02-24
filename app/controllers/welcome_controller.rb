@@ -10,7 +10,7 @@ class WelcomeController < ApplicationController
     end
 	end
   def get_data
-    @properties = Property.all.count
+    @properties = Property.where.not(active_job:nil).count
     respond_to do |format|
       format.json { render json: @properties }
     end
