@@ -9,10 +9,11 @@ require "action_view/railtie"
 require "sprockets/railtie"
 # require "rails/test_unit/railtie"
 
+
 # Require the gems listed in Gemfile, including any gems
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
-
+config.serve_static_assets = true
 module PropertyManager
   class Application < Rails::Application
     config.assets.paths << "#{Rails}/vendor/assets/fonts"
