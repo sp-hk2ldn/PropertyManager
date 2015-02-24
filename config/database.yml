@@ -4,8 +4,10 @@
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
 #
-default: &default
+# default: &default
+production:
   adapter: postgresql
+  url: <%= ENV['HEROKU_POSTGRESQL_MAROON'] %>
   pool: 5
   timeout: 5000
 
