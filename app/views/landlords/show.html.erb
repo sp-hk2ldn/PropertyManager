@@ -7,7 +7,7 @@
     <span class="glyphicon glyphicon-pencil"></span>
     Edit
   <% end %>
-  <h1><%= @landlord.first_name + " " + @landlord.last_name %>, Landlord</h1>
+  <h1><%= @landlord.first_name + " " + @landlord.last_name %></h1>
 </div>
 
 <dl class="dl-horizontal">
@@ -18,7 +18,7 @@
   <dd><%= @landlord.last_name %></dd>
 
   <dt>Email:</dt>
-  <dd><%= @landlord.email %></dd>
+  <dd><%= mail_to @landlord.email, @landlord.email %></dd>
 
   <dt>Tel:</dt>
   <dd><%= @landlord.tel %></dd>
@@ -28,5 +28,8 @@
 
   <dt>Date registered:</dt>
   <dd><%= @landlord.date_registered %></dd>
+
+  <dt>Property Count:</dt>
+  <dd><%= @property_count %></dd>
 
 </dl>

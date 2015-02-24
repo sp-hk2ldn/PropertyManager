@@ -10,6 +10,7 @@ class LandlordsController < ApplicationController
   # GET /landlords/1
   # GET /landlords/1.json
   def show
+    @property_count = Property.where(landlord_id: @landlord.id).count
   end
 
   # GET /landlords/new

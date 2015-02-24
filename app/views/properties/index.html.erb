@@ -34,7 +34,7 @@
                 <% @tenant_boolean = false %>
               <% end %>
             <% end %>
-            <% if @tenant_boolean == false %>
+            <% if @tenant_boolean == false || @tenant.count == 0 %>
               <td>No Tenant!</td>
             <% end %>
             <%= @tenant.find_each do |tenant| %>
@@ -46,16 +46,16 @@
                 <% @tenant_lease_boolean = false %>
               <% end %>
             <% end %>
-            <% if @tenant_lease_boolean == false %>
+            <% if @tenant_lease_boolean == false || @tenant.count == 0%>
               <td>N/A</td>
             <% end %>
-            <% if property.active_job == "1" %>
+            <% if property.active_job.to_i > 0 %>
               <td>Yes</td>
             <% else %>
               <td> No </td>
             <% end %>
-        <td><%= link_to 'Edit', edit_property_path(property) %></td>
-        <td><%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure? This cannot be undone!' } %></td>
+        
+        <td><%= link_to 'Edit', edit_property_path(property) %> | <%= link_to 'Destroy', property, method: :delete, data: { confirm: 'Are you sure? This cannot be undone!' } %></td>
       <% end %>
     </tbody>
   </table>
