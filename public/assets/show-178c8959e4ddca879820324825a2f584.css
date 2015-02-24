@@ -1,0 +1,29 @@
+/* line 1, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/show.css.scss */
+#landlord-tenant-header {
+  padding-top: 50px;
+}
+
+/* line 6, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/show.css.scss */
+#landlord-tenant-infos {
+  padding-top: 50px;
+}
+
+/* line 12, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/show.css.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 16, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/show.css.scss */
+#map {
+  border: 4px solid #bf5a16;
+}
+
+/* line 20, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/show.css.scss */
+.gm-style-iw {
+  color: black;
+}
+
+/* line 24, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/show.css.scss */
+.property-details-list {
+  padding-left: 0px;
+}
