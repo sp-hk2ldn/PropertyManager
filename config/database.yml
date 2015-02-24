@@ -13,8 +13,6 @@ default: &default
 production:
   adapter: postgresql
   url: <%= ENV['HEROKU_POSTGRESQL_MAROON'] %>
-  pool: 5
-  timeout: 5000
 
 development:
   <<: *default
