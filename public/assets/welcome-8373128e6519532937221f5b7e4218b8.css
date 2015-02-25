@@ -1,0 +1,65 @@
+/* line 6, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/welcome.css.scss */
+#map {
+  margin-top: 10px;
+  height: 500px;
+  border: 4px solid #bf5a16;
+}
+
+/* line 12, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/welcome.css.scss */
+.gm-style-iw {
+  color: black;
+}
+
+/* line 15, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/welcome.css.scss */
+#dash-panel {
+  margin-bottom: 20px;
+}
+
+/* line 19, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/welcome.css.scss */
+#mygraph {
+  margin-top: 50px;
+  height: 110px;
+  width: 110px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* line 29, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/welcome.css.scss */
+.background {
+  fill: #FFFFFF;
+  fill-opacity: 0.01;
+}
+
+/* line 34, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/welcome.css.scss */
+.component {
+  fill: #e1e1e1;
+}
+
+/* line 38, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/welcome.css.scss */
+.component .label {
+  text-anchor: middle;
+}
+
+/* line 45, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/welcome.css.scss */
+.arc {
+  stroke-weight: 0.1;
+  fill: #df691a;
+}
+
+/* line 52, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/welcome.css.scss */
+.arc2 {
+  stroke-weight: 0.1;
+  fill: #bf5a16;
+}
+
+/* line 59, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/welcome.css.scss */
+.label {
+  text-anchor: middle;
+  font-size: 70%;
+}
+
+/* line 65, /home/stephen/workspace/PropertyManager/app/assets/stylesheets/welcome.css.scss */
+.radial-svg {
+  display: block;
+  margin: 0 auto;
+}
