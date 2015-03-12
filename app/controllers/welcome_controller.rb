@@ -10,7 +10,7 @@ class WelcomeController < ApplicationController
     end
 	end
   def get_data
-    @properties = [Property.where.not(active_job:nil).count, Property.all.count]
+    @properties = [Property.where.not(active_job:nil).count, Property.all.count, Work.where("completed_at IS NOT NULL").count]
     respond_to do |format|
       format.json { render json: @properties }
     end
