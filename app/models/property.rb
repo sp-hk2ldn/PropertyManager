@@ -1,10 +1,11 @@
 class Property < ActiveRecord::Base
-  before_destroy :check_for_works
+  # The following prohibits all property deletions
+  # before_destroy :check_for_works
 
-  def check_for_works
-    errors.add :base, "Close any outstanding works before deletion."
-    false
-  end
+  # def check_for_works
+  #   errors.add :base, "Close any outstanding works before deletion."
+  #   false
+  # end
 
 
 	geocoded_by :address

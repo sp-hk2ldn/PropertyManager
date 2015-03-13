@@ -28,11 +28,11 @@ $(document).ready(function(){
               .diameter(150)
               .value(data[1])
               .render();
-      var rp3 = radialProgress(document.getElementById('radial-3'))
-              .label("Jobs Completed")
-              .diameter(150)
-              .value(data[2])
-              .render();
+      // var rp3 = radialProgress(document.getElementById('radial-3'))
+      //         .label("Jobs Completed")
+      //         .diameter(150)
+      //         .value(data[2])
+      //         .render();
     }
   });
 })

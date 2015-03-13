@@ -46,7 +46,7 @@
                 <% if tenant.lease_end < 0.day.ago %>
                   <li>Lease ended on <%= tenant.lease_end.to_formatted_s(:long) %>
                 <% else %> 
-                  <li>Lease Ends: <%= tenant.lease_end.to_formatted_s(:long)%> (<%= (Date.today - tenant.lease_end).to_i / 7 %> Weeks Left)</li>
+                  <li>Lease Ends: <%= tenant.lease_end.to_formatted_s(:long)%> (<%= (Date.today - tenant.lease_end).to_i.abs / 7 %> Weeks Left)</li>
                 <% end %>
                 <% @tenant_boolean = true %>
                 <% break %>
